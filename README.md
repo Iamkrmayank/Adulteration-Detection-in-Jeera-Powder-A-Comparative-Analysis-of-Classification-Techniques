@@ -24,6 +24,7 @@ var_intensity: The variance of the pixel intensities. Similar to standard deviat
 skewness: A measure of the asymmetry of the distribution of pixel intensities. This can help in understanding the distribution shape and whether there are more dark or light pixels.
 kurtosis: A measure of the "tailedness" of the distribution of pixel intensities. High kurtosis indicates more pixels with extreme intensity values, either very dark or very bright.
 Outcome: The target variable, which contains binary values (0 or 1). This column indicates the classification result based on the extracted features. For instance, it may denote different quality grades of the jeera powder.
+
 Class Imbalance and SMOTE Application
 Initially, the 'Outcome' column exhibited a significant class imbalance with the following distribution:
 
@@ -33,9 +34,12 @@ To address this imbalance and ensure that the machine learning models are not bi
 
 Post-SMOTE Application
 After applying SMOTE, the dataset achieved a balanced distribution of the 'Outcome' values, resulting in equal representation of both classes. This balanced dataset is crucial for training robust and unbiased models, improving their ability to generalize and perform well on unseen data.
+
 Class 0: 225 instances
 Class 1: 225 instances
-Link for Dataset: https://github.com/Iamkrmayank/Adulteration_Detection/blob/main/Jeera_New.xlsx
+
+# Link for Dataset: https://github.com/Iamkrmayank/Adulteration_Detection/blob/main/Jeera_New.xlsx
+
 2.Data Preparation
 To ensure the quality and reliability of the dataset, several preprocessing steps were undertaken:
 (a). Data Exploration 
